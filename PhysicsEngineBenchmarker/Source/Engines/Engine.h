@@ -59,10 +59,10 @@ class PhysicsEngine
 public:
     void Init(unsigned int seed) {}
 
-    BodyId AddBodyAt(BodyType Type, const Vector3& Pos, ValueType ScaleFactor, bool bIsDynamic) { return BodyId(); }
-    void RemoveBody(int Handle) {}
-    void SetBodyPosition(BodyId Handle, const Vector3& Pos) {}
-    bool Raycast(const Vector3& Start, const Vector3& Direction) { return false; }
-    void OptimizeBroadPhase() {}
+    BodyId AddBodyAt(BodyType Type, const Vector3& Pos, ValueType ScaleFactor, bool bIsDynamic) { exit(-1); return BodyId(); }
+    void RemoveBody(int Handle) { exit(-1);}
+    void SetBodyPosition(BodyId Handle, const Vector3& Pos) { exit(-1);}
+    bool Raycast(const Vector3& Start, const Vector3& Direction) {  exit(-1); return false; }
+    void OptimizeBroadPhase() { exit(-1);}
 };
 
