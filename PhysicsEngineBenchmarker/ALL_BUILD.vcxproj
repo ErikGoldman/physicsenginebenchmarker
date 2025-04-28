@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF2AE23D-4B9C-3388-842F-A3F5A765C5F2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\Build\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker/Build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\Lib\site-packages\cmake\data\bin\cmake.exe -SG:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker/Build -BG:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker --check-stamp-file G:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CheckIPOSupported.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FetchContent.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FindGit.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker/Build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\Lib\site-packages\cmake\data\bin\cmake.exe -SG:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker/Build -BG:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker --check-stamp-file G:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CheckIPOSupported.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FetchContent.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FindGit.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">Building Custom Rule G:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker/Build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">setlocal
+C:\Python312\Lib\site-packages\cmake\data\bin\cmake.exe -SG:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker/Build -BG:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker --check-stamp-file G:/Unreal_Projects/PhysicsEngineBenchmarker/PhysicsEngineBenchmarker/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\CheckIPOSupported.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FetchContent.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FindGit.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Python312\Lib\site-packages\cmake\data\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\3.30.4\CMakeCXXCompiler.cmake;G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\3.30.4\CMakeRCCompiler.cmake;G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\3.30.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\ZERO_CHECK.vcxproj">
+      <Project>{772045E1-4684-3E07-AB19-FE992FFFA1C7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\_deps\joltphysics-build\Jolt.vcxproj">
+      <Project>{ACF92571-1FB3-394E-93EB-44DFC8BFB975}</Project>
+      <Name>Jolt</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker.vcxproj">
+      <Project>{91EF0A49-F71E-318C-8DC8-A7F9BA403481}</Project>
+      <Name>PhysicsEngineBenchmarker</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Unreal_Projects\PhysicsEngineBenchmarker\PhysicsEngineBenchmarker\_deps\box3d-build\src\box3d.vcxproj">
+      <Project>{DC13B150-46E3-33DD-AFC8-4878902B76FC}</Project>
+      <Name>box3d</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

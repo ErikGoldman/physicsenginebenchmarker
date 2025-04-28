@@ -1,0 +1,71 @@
+﻿# C++ build artifacts
+*.obj
+*.o
+*.gch
+*.pch
+*.pdb
+*.idb
+*.res
+*.ilk
+*.dll
+*.exe
+*.lib
+*.so
+*.dylib
+*.app
+
+# Visual Studio project files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+*.vcxproj.filters
+*.aps
+*.ncb
+*.sdf
+*.cachefile
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+*.dbmdl
+*.dbproj.schemaview
+*.dbproj
+*.v12.suo
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+
+# Rider / CLion / IntelliJ IDEA
+.idea/
+*.iml
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Build folders
+build/
+Build/
+bin/
+Bin/
+Debug/
+Release/
+x64/
+x86/
+
+# Other temp
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+._*
+.DS_Store
+Thumbs.db
+
+# Dependency folders
+_deps/
